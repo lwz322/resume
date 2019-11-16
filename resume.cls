@@ -43,7 +43,7 @@
 \RequirePackage{enumitem}
 \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
 %\setlist{nosep} % removes all vertical spacing within and around the list
-\setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
+\setlist[itemize]{topsep=0.15em, leftmargin=1.5pc}
 \setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
@@ -71,8 +71,8 @@
   {\par #1 \hfill #2 \par}%
 }
 
-\newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
+\newcommand{\name}[3]{
+  \leftline{\Huge{\scshape{#1}}\ \large\textbf{#2}{#3}}
   \vspace{1.25ex}
 }
 
@@ -112,11 +112,11 @@
     {\href{#2}{#1}}}
 
 \newcommand{\basicInfo}[1]{
-  \centerline{\sffamily\large{#1}}
-  \vspace{1.5ex}
+  \leftline{\sffamily\large{#1}}
+  \vspace{0.75ex}
 }
 
 \newcommand{\role}[2]{
   {\par \textit{#1} ~ #2 \par}
-  \vspace{0.85ex}
+  \vspace{0.1ex}
 }
